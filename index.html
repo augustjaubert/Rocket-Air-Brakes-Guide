@@ -46,11 +46,11 @@
       </div>
     </nav>
 
+
     <section class="py-3 bg-warning bg-gradient bg-opacity-75">
-      <div class="justify-content-sm-center">
       <div class="container">
         <div class="row">
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch" style="max-width:13cm">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:13cm">
             <div class="card shadow">
               <img
                 src="https://www.twi-global.com/image-library/hero/design-for-manufacture-istock-1173740460.jpg"
@@ -59,7 +59,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Mechanical Designs</h5>
-                <p class="card-text mb-4 text-black-50">
+                <p class="card-text mb-3 text-black-50">
                   Learn about how the various mechanical designs function and
                   their characteristics.
                 </p>
@@ -72,7 +72,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch" style="max-width:13cm">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:13cm">
             <div class="card shadow">
               <img
                 src="https://www.reviewgeek.com/p/uploads/2020/05/e865dde8.jpg"
@@ -81,7 +81,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Sensors, Actuators and Controllers</h5>
-                <p class="card-text mb-4 text-black-50">
+                <p class="card-text mb-3 text-black-50">
                   Learn about what the circuit's electrical requirements, how it
                   works and what it will achieve.
                 </p>
@@ -92,7 +92,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-3 d-flex align-items-stretch" style="max-width:13cm">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:13cm">
             <div class="card shadow">
               <img
                 src="https://media.defense.gov/2016/Nov/21/2001670621/2000/2000/0/161119-F-ZZ999-001.JPG"
@@ -101,7 +101,7 @@
               />
               <div class="card-body d-flex flex-column">
                 <h5 class="card-title">Simulation and System Control</h5>
-                <p class="card-text mb-4 text-black-50">
+                <p class="card-text mb-3 text-black-50">
                   Learn about the theory in a rocket's trajectory and how to
                   utilize that in altitude control
                 </p>
@@ -115,36 +115,17 @@
       </div>
       </div>
     </section>
-
-    <div class="card text-center">
-      <div class="card-header">
-        <ul class="nav nav-tabs card-header-tabs">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="true" href="#">What</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" aria-current="true"  href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-      </div>
-      <div class="card-body">
-        <h5 class="card-title">Special title treatment</h5>
-        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-        <a href="#" class="btn btn-primary">Go somewhere</a>
-      </div>
-    </div>
-
-
-
-    <!--
-    <h1 class="display-3 text-center py-3">What are air brakes?</h1>
-
-    <div class="d-flex justify-content-lg-center">
-      <p class="text-center mx-5 lh-sm">
-        Air brakes are a type of <strong>flight control surface</strong> mounted on a vehicle to increase its drag without significantly changing its lift,
+<div class="container my-3">
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">What are they</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Why use them</button>
+      </li>
+    </ul>
+    <div class="tab-content" id="pills-tabContent">
+      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Air brakes are a type of <strong>flight control surface</strong> mounted on a vehicle to increase its drag without significantly changing its lift,
         allowing for the vehicle to decelerate.
         <br />
         <br />
@@ -152,9 +133,16 @@
         based on achieving a predefined target altitude at apogee. The rocket flight can be
         separated into four stages: Launch and powered ascent, coasting period
         up to apogee, descent and landing. In the case of a model rocket braking
-        system, only the <strong>launch</strong> and <strong>coasting</strong> stages are of interest.
-      </p>
-    </div>
+        system, only the <strong>launch</strong> and <strong>coasting</strong> stages are of interest.</div>
+      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">After reaching motor burnout, a rocket mostly follows a ballistic trajectory. While methods to control the apogee can be achieved through very precise flight simulations and adapting the rocket accordingly (changing the mass of the rocket with a dummy mass), they don’t implement a control system and cannot adjust depending on its environment.
+
+        If you plan on launching a rocket at <strong>higher altitudes (>1km)</strong>, it gets trickier to make the right assumptions in order predict the flight trajectory. 
+        
+        Instead, you could rely on the telemetry measurements of your rocket so that it can know in real time where it is in space, how it is orientated, and hopefully be smart enough to figure out where it is headed.</div>
+      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      </div>
+
+
 
 <h3 class="display-6 text-center py-3"> When and why are they recommended?</h3>
 
@@ -188,6 +176,5 @@
         trigger.
       </div>
     </div>
-  -->
   </body>
 </html>
