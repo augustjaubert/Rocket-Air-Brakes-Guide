@@ -116,16 +116,20 @@
       </div>
     </section>
 <div class="container my-3">
-    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+    <ul class="nav nav-pills mb-3 d-flex justify-content-center gap-1" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">What are they</button>
+        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-what" type="button" role="tab" aria-controls="pills-what" aria-selected="true">What are they</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Why use them</button>
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-why" type="button" role="tab" aria-controls="pills-why" aria-selected="false">Why use them</button>
       </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-exists" type="button" role="tab" aria-controls="pills-exists" aria-selected="false">What exists</button>
+      </li>
+      
     </ul>
     <div class="tab-content" id="pills-tabContent">
-      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">Air brakes are a type of <strong>flight control surface</strong> mounted on a vehicle to increase its drag without significantly changing its lift,
+      <div class="tab-pane fade show active" id="pills-what" role="tabpanel" aria-labelledby="pills-what-tab">Air brakes are a type of <strong>flight control surface</strong> mounted on a vehicle to increase its drag without significantly changing its lift,
         allowing for the vehicle to decelerate.
         <br />
         <br />
@@ -134,12 +138,12 @@
         separated into four stages: Launch and powered ascent, coasting period
         up to apogee, descent and landing. In the case of a model rocket braking
         system, only the <strong>launch</strong> and <strong>coasting</strong> stages are of interest.</div>
-      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">After reaching motor burnout, a rocket mostly follows a ballistic trajectory. While methods to control the apogee can be achieved through very precise flight simulations and adapting the rocket accordingly (changing the mass of the rocket with a dummy mass), they don’t implement a control system and cannot adjust depending on its environment.
+      <div class="tab-pane fade" id="pills-why" role="tabpanel" aria-labelledby="pills-why-tab">After reaching motor burnout, a rocket mostly follows a ballistic trajectory. While methods to control the apogee can be achieved through very precise flight simulations and adapting the rocket accordingly (changing the mass of the rocket with a dummy mass), they don’t implement a control system and cannot adjust depending on its environment.
 
         If you plan on launching a rocket at <strong>higher altitudes (>1km)</strong>, it gets trickier to make the right assumptions in order predict the flight trajectory. 
         
         Instead, you could rely on the telemetry measurements of your rocket so that it can know in real time where it is in space, how it is orientated, and hopefully be smart enough to figure out where it is headed.</div>
-      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div>
+      <div class="tab-pane fade" id="pills-exists" role="tabpanel" aria-labelledby="pills-exists-tab">The two main categories of air brakes that exist are:</div>
       </div>
 
 
