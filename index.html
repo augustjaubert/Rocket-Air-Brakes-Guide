@@ -50,7 +50,7 @@
     <section class="py-3 bg-warning bg-gradient bg-opacity-75">
       <div class="container">
         <div class="row d-flex justify-content-center">
-          <div class="col-lg-4 mb-3 d-flex" style="max-width:12cm">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:10cm">
             <div class="card shadow">
               <img
                 src="https://www.twi-global.com/image-library/hero/design-for-manufacture-istock-1173740460.jpg"
@@ -72,8 +72,8 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-3 d-flex" style="max-width:12cm">
-            <div class="card shadow">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:10cm">
+            <div class="card shadow-lg">
               <img
                 src="https://www.reviewgeek.com/p/uploads/2020/05/e865dde8.jpg"
                 class="card-img-top"
@@ -92,7 +92,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 mb-3 d-flex" style="max-width:12cm">
+          <div class="col-lg-4 mb-3 d-flex" style="max-width:10cm">
             <div class="card shadow">
               <img
                 src="https://media.defense.gov/2016/Nov/21/2001670621/2000/2000/0/161119-F-ZZ999-001.JPG"
@@ -119,15 +119,14 @@
 <div class="container my-4 " style="max-width:800px">
     <ul class="nav nav-pills m-3 d-flex justify-content-center gap-1" id="pills-tab" role="tablist">
       <li class="nav-item" role="presentation">
-        <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-what" type="button" role="tab" aria-controls="pills-what" aria-selected="true">What are they</button>
+        <button class="nav-link active" id="pills-what-tab" data-bs-toggle="pill" data-bs-target="#pills-what" type="button" role="tab" aria-controls="pills-what" aria-selected="true">What are they</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-why" type="button" role="tab" aria-controls="pills-why" aria-selected="false">Why use them</button>
+        <button class="nav-link" id="pills-why-tab" data-bs-toggle="pill" data-bs-target="#pills-why" type="button" role="tab" aria-controls="pills-why" aria-selected="false">Why use them</button>
       </li>
       <li class="nav-item" role="presentation">
-        <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-exists" type="button" role="tab" aria-controls="pills-exists" aria-selected="false">What exists</button>
+        <button class="nav-link" id="pills-exists-tab" data-bs-toggle="pill" data-bs-target="#pills-exists" type="button" role="tab" aria-controls="pills-exists" aria-selected="false">What exists</button>
       </li>
-      
     </ul>
     <div class="tab-content" id="pills-tabContent">
       <div class="tab-pane fade show active" id="pills-what" role="tabpanel" aria-labelledby="pills-what-tab">
@@ -137,7 +136,7 @@
         <br />
         <br />
         <mark>In many high power rocketry competitions, one of the grading criteria is
-        based on achieving a predefined target altitude at apogee</mark>. The rocket flight can be
+        based on achieving a <u>predefined target altitude at apogee</u></mark>. The rocket flight can be
         separated into four stages: Launch and powered ascent, coasting period
         up to apogee, descent and landing. In the case of a model rocket braking
         system, only the <u>launch</u> and <u>coasting</u> stages are of interest.</p>
@@ -260,8 +259,20 @@
               <p class="card-text"><small>Depending on their size (in terms opening sizes required to allow them to pass through the body tube), the openings could act as stress concentrators and compromise the structural integrity of the rocket.</small></p>
             </div>
           </div> 
+        <div class="card border-warning">
+          <div class="card-header bg-warning">Air Braking Approaches</div>
+          <div class="p-3">
+          <dl class="row">
+            <dt class="col-sm-3">Actively Modulating System</dt>
+            <dd class="col-sm-9">A modulating system allows you to <u>control the amount of drag</u> you want to add to the rocket by varying the degrees of deployment (or %) to choose from. Additionally, a <mark><a class="text-dark" href="https://en.wikipedia.org/wiki/Control_theory#Open-loop_and_closed-loop_(feedback)_control">closed loop control</a></mark> can be implemented.</dd>
+            <dt class="col-sm-3">Single-use System</dt>
+            <dd class="col-sm-9">A single-use brake system has <u>two states</u> (un-deployed and fully deployed) and fully deploys the air brakes once at a specific timing decided by the program. This type of control would <u>require a much more reliable and precise prediction model</u>, but can be chosen for its <mark>simplicity</mark> and <mark>small size</mark> in non-competitive flights.</dd>
+          </dl>
+          </div>
         </div>
+
       </div>
+      
     </div>
 
 
