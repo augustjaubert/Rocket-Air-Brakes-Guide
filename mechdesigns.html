@@ -34,7 +34,7 @@
       integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
       crossorigin="anonymous"
     ></script>
-
+ 
     <a href="/index.html" class="d-flex flex-fill align-items-center text-white text-decoration-none">
       <div class="ps-3 pt-3">
         <button type="button" class="btn btn-outline-dark btn-sm">
@@ -64,10 +64,10 @@
         <div class="card-body">
           <div class="card-text">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps1"><h5 class="font-monospace text-danger">Slow & Easy</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps2"><h5 class="font-monospace text-success">High Drag Potential</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps3"><h5 class="font-monospace text-danger">Heavier</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps4"><h5 class="font-monospace text-danger">Large</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps1"><h5 class="font-monospace text-secondary">Slow & Easy</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps2"><h5 class="font-monospace text-primary">High Drag Potential</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps3"><h5 class="font-monospace text-secondary">Heavier</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps4"><h5 class="font-monospace text-secondary">Large</h5></li>
             </ul>
           </div>
         </div>
@@ -80,10 +80,10 @@
         <div class="card-body">
           <div class="card-text">
             <ul class="list-group list-group-flush">
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension1"><h5 class="font-monospace text-success">Fast & Easy</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension2"><h5 class="font-monospace text-danger">Low Drag Potential</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension3"><h5 class="font-monospace text-success">Lighter</h5></li>
-              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension4"><h5 class="font-monospace text-success">Compact</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension1"><h5 class="font-monospace text-primary">Fast & Easy</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension2"><h5 class="font-monospace text-secondary">Low Drag Potential</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension3"><h5 class="font-monospace text-primary">Lighter</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension4"><h5 class="font-monospace text-primary">Compact</h5></li>
             </ul>
           </div>
         </div>
@@ -200,5 +200,31 @@
      </div>
   </div>
 </div>
+
+
+
+<div class="toast-container position-fixed bottom-0 end-0 p-3">
+  <div id="quicktip" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+    <i class="bi bi-lightbulb pe-1"></i>
+      <strong class="me-auto">Quick tip</strong>
+      <small>just now</small>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      <mark>Click on text</mark> to see more details appear!
+    </div>
+  </div>
+</div>
+
+<script>
+const toastTrigger = document.getElementById('liveToastBtn')
+const toastLiveExample = document.getElementById('quicktip')
+window.onload = (event) => {
+    const toast = new bootstrap.Toast(toastLiveExample)
+    toast.show()
+}
+</script>
+
   </body>
 </html>
