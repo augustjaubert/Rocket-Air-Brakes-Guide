@@ -35,38 +35,170 @@
       crossorigin="anonymous"
     ></script>
 
-    <header class="p-3 text-bg-warning bg-gradient">
+    <a href="/index.html" class="d-flex flex-fill align-items-center text-white text-decoration-none">
+      <div class="ps-3 pt-3">
+        <button type="button" class="btn btn-outline-dark btn-sm">
+        <i class="bi bi-arrow-left"></i> back
+        </button>
+    </div>
+    </a>
+
+    <div class="text-center">
       <div class="container">
-        <div
-          class="
-            d-flex
-            flex-wrap
-            align-items-center
-            justify-content-center justify-content-lg-start
-          "
-        >
-          <a
-            href="/index.html"
-            class="
-              d-flex
-              flex-fill
-              align-items-centertext-white
-              text-decoration-none
-            "
-          >
-            <button type="button" class="btn btn-outline-light btn-sm">
-              <i class="bi bi-arrow-left"></i> nvm i'm out
-            </button>
-          </a>
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <h1 class="flex-fill">Mechanical Designs</h1>
         </div>
       </div>
-    </header>
+    </div>
 
-<div class="text-center p-5"><h1>The criteria list</h1>
+<div class="container d-flex justify-content-start" style="max-width:800px">
+<p class="lead pt-4"> Let us see how each design compares to the categories,</p>
+</div>
+
+<div class="container" style="max-width:800px">
+  <div class="row align-items-center">
+    
+    <div class="col">
+      <div class="card border-primary shadow-lg">
+        <h3 class="card-header bg-primary text-light text-center">Surface Flaps</h3>
+        <div class="card-body">
+          <div class="card-text">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps1"><h5 class="font-monospace text-danger">Slow & Easy</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps2"><h5 class="font-monospace text-success">High Drag Potential</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps3"><h5 class="font-monospace text-danger">Heavier</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropflaps4"><h5 class="font-monospace text-danger">Large</h5></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card border-primary shadow-lg">
+        <h3 class="card-header bg-primary text-light text-center">Extension Surfaces</h3>
+        <div class="card-body">
+          <div class="card-text">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension1"><h5 class="font-monospace text-success">Fast & Easy</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension2"><h5 class="font-monospace text-danger">Low Drag Potential</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension3"><h5 class="font-monospace text-success">Lighter</h5></li>
+              <li class="list-group-item" data-bs-toggle="modal" data-bs-target="#staticBackdropextension4"><h5 class="font-monospace text-success">Compact</h5></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 
 
+
+<div class="modal fade" id="staticBackdropflaps1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Slow & Easy Actuation</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Flaps deployed against the airflow will experience the highest force on actuation from high velocities. This means they will require beefy actuators or gear arrangements such as worm gears or lead screws. The use of such arrangements however means that the activation will be much slower.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropflaps2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Highest Drag Potential</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          As surface flaps have the largest surface area capability, they allow for the design to have a large drag potential.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropflaps3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Heavy</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          While allowing for a higher drag potential, this means the system’s structure will have to support a larger force. Material considerations may come from the fact that it will need heavier structural components such as metals.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropflaps4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Large Volume</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Additionally, as the surface area of the flaps increases, so does the volume of the mechanism. While it would be possible in theory to place other components in between the mechanism, that is not recommended.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropextension1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Slow & Easy Actuation</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Flaps deployed against the airflow will experience the highest force on actuation from high velocities. This means they will require beefy actuators or gear arrangements such as worm gears or lead screws. The use of such arrangements however means that the activation will be much slower.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropextension2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Slow & Easy Actuation</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Flaps deployed against the airflow will experience the highest force on actuation from high velocities. This means they will require beefy actuators or gear arrangements such as worm gears or lead screws. The use of such arrangements however means that the activation will be much slower.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropextension3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Slow & Easy Actuation</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Flaps deployed against the airflow will experience the highest force on actuation from high velocities. This means they will require beefy actuators or gear arrangements such as worm gears or lead screws. The use of such arrangements however means that the activation will be much slower.
+        </div>
+     </div>
+  </div>
+</div>
+<div class="modal fade" id="staticBackdropextension4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+     <div class="modal-content">
+        <div class="modal-header">
+           <h5 class="modal-title" id="staticBackdropLabel">Slow & Easy Actuation</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Flaps deployed against the airflow will experience the highest force on actuation from high velocities. This means they will require beefy actuators or gear arrangements such as worm gears or lead screws. The use of such arrangements however means that the activation will be much slower.
+        </div>
+     </div>
+  </div>
+</div>
   </body>
 </html>
